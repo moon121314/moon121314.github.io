@@ -1,4 +1,25 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
 *.log
+
+# Environment
 .env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
 node_modules/

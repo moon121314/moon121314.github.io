@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Md Kamruzzaman — Python Backend Developer</title>
-  <meta name="description" content="Python backend developer focused on FastAPI, PostgreSQL, and containerized APIs." />
+  <meta name="description" content="Python backend developer building REST APIs with FastAPI, PostgreSQL, and Docker. Deployed to Render. Working toward MLOps." />
+  <meta name="author" content="Md Kamruzzaman" />
+  <meta property="og:title" content="Md Kamruzzaman — Python Backend Developer" />
+  <meta property="og:description" content="FastAPI · PostgreSQL · Docker · CI/CD · Cloud Deployment" />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +25,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -34,17 +38,18 @@
       <h1>Md Kamruzzaman</h1>
       <h2 class="hero-sub">Python Backend Developer</h2>
       <p class="hero-text">
-        I build REST APIs with FastAPI, PostgreSQL, and Docker.
-        Currently focused on backend engineering and the foundations of MLOps.
+        Computer Science graduate specializing in Machine Learning, currently focused on
+        backend engineering. I build production-oriented REST APIs with FastAPI,
+        PostgreSQL, and Docker — and deploy them to the cloud.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">View Projects</a>
         <a class="btn btn-ghost" href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="hero-meta">
-        <span>📍 [EDIT: Location]</span>
-        <span>✉️ [EDIT: email]</span>
-        <span>🔗 <a href="[EDIT: LinkedIn URL]" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span>✉️ <a href="mailto:kamruzzamanmoon13@gmail.com">kamruzzamanmoon13@gmail.com</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a></span>
       </div>
     </div>
   </header>
@@ -54,16 +59,20 @@
     <h2 class="section-title">About Me</h2>
     <div class="prose">
       <p>
-        I'm a Python developer focused on backend engineering. I enjoy building APIs
-        that are actually structured like real products — with authentication,
-        migrations, tests, containers, and CI — not just tutorial endpoints.
+        I'm a Computer Science graduate with a specialization in Machine Learning,
+        currently focused on backend engineering. I enjoy building APIs that are
+        structured like real products — with authentication, migrations, tests,
+        containers, CI, and cloud deployment — rather than tutorial-level endpoints.
       </p>
       <p>
-        Right now I'm sharpening my backend skills and slowly moving toward
-        MLOps by learning how software gets deployed, tested, and shipped.
+        My short-term goal is to grow as a <strong>Python Backend Developer</strong>.
+        My long-term goal is to become an <strong>MLOps Engineer</strong>, combining
+        backend engineering, DevOps, and machine learning to build and maintain
+        production ML systems.
       </p>
       <p>
-        [EDIT: Add 1–2 sentences about your background, education, or what got you into programming.]
+        Right now I'm deepening my backend skills and expanding into MLOps by
+        learning how software gets built, tested, deployed, and monitored in production.
       </p>
     </div>
   </section>
@@ -78,7 +87,6 @@
         <ul>
           <li>Python</li>
           <li>SQL</li>
-          <li>[EDIT: add more if applicable]</li>
         </ul>
       </div>
 
@@ -87,8 +95,8 @@
         <ul>
           <li>FastAPI</li>
           <li>REST API design</li>
-          <li>JWT authentication</li>
           <li>Pydantic</li>
+          <li>JWT authentication</li>
         </ul>
       </div>
 
@@ -98,28 +106,42 @@
           <li>PostgreSQL</li>
           <li>SQLAlchemy ORM</li>
           <li>Alembic migrations</li>
+          <li>Database relationships</li>
         </ul>
       </div>
 
       <div class="skill-card">
-        <h3>DevOps (foundational)</h3>
+        <h3>DevOps</h3>
         <ul>
           <li>Docker</li>
           <li>Docker Compose</li>
-          <li>GitHub Actions CI</li>
           <li>Git &amp; GitHub</li>
+          <li>GitHub Actions (CI)</li>
+          <li>Render (cloud deployment)</li>
         </ul>
       </div>
 
       <div class="skill-card">
-        <h3>Testing</h3>
+        <h3>Testing &amp; Code Quality</h3>
         <ul>
           <li>pytest</li>
+          <li>API testing</li>
+          <li>Debugging</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Currently Learning</h3>
+        <ul>
+          <li>Advanced FastAPI</li>
+          <li>System design</li>
+          <li>Data structures &amp; algorithms</li>
+          <li>MLOps</li>
         </ul>
       </div>
 
     </div>
-    <p class="note">Only real, demonstrated skills are listed. No padding.</p>
+    <p class="note">Only real, demonstrated skills are listed at the top. Anything still in progress lives under "Currently Learning."</p>
   </section>
 
   <!-- PROJECTS -->
@@ -129,34 +151,40 @@
     <h3 class="subsection-title">Featured</h3>
     <div class="projects-grid">
 
-      <!-- PROJECT: Expense Tracker API -->
       <article class="project-card">
         <div class="project-thumb">
-          <img src="assets/expense-tracker.png" alt="Expense Tracker API Swagger docs" />
+          <img src="assets/expense-tracker.png" alt="Expense Tracker API — Swagger docs" />
         </div>
         <div class="project-body">
           <h4>Expense Tracker API</h4>
           <p class="project-desc">
-            Production-style REST API for tracking personal expenses, with JWT auth,
-            PostgreSQL, Alembic migrations, Docker, and GitHub Actions CI.
+            Production-oriented REST API for tracking personal expenses, built with
+            FastAPI, PostgreSQL, and JWT authentication. Containerized, tested with
+            pytest, and deployed live to Render via a GitHub Actions CI pipeline.
           </p>
           <ul class="project-features">
-            <li>JWT authentication with password hashing</li>
-            <li>User-scoped expense CRUD</li>
+            <li>User registration and login with JWT</li>
+            <li>Password hashing and protected endpoints</li>
+            <li>User-specific data isolation</li>
+            <li>Full CRUD for expenses</li>
             <li>Filtering by category and minimum amount</li>
             <li>Pydantic request validation</li>
-            <li>Dockerized with CI running pytest</li>
+            <li>PostgreSQL + SQLAlchemy + Alembic migrations</li>
+            <li>Dockerized with GitHub Actions CI</li>
+            <li>Deployed live to Render</li>
           </ul>
           <div class="tech-tags">
             <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
             <span>SQLAlchemy</span><span>Alembic</span><span>JWT</span>
             <span>Docker</span><span>pytest</span><span>GitHub Actions</span>
+            <span>Render</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/moon121314" target="_blank" rel="noopener">Code ↗</a>
-            <span class="muted">Demo: coming soon</span>
+            <!-- ⚠️ VERIFY THIS URL — see note below -->
+            <a href="https://github.com/moon121314/expense-tracker-api" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://expense-tracker-adds.onrender.com/docs" target="_blank" rel="noopener">Live Demo ↗</a>
           </div>
-          <p class="project-meta">Backend · Intermediate</p>
+          <p class="project-meta">Backend / REST API · Intermediate · Deployed</p>
         </div>
       </article>
 
@@ -166,60 +194,50 @@
     <p class="note">More projects coming soon. Follow along on <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a>.</p>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <h2 class="section-title">Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">[EDIT: dates]</div>
-        <div class="timeline-body">
-          <h4>[EDIT: Role / Freelance / Self-study]</h4>
-          <p>[EDIT: Short description of what you did and what you learned.]</p>
-        </div>
-      </div>
-      <p class="note">If you don't have formal experience yet, replace this section with "Self-Directed Learning" and list what you've built.</p>
-    </div>
-  </section>
-
   <!-- EDUCATION -->
   <section id="education" class="section">
     <h2 class="section-title">Education</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-date">[EDIT: years]</div>
+        <div class="timeline-date">B.Tech</div>
         <div class="timeline-body">
-          <h4>[EDIT: Degree / Program]</h4>
-          <p>[EDIT: Institution]</p>
+          <h4>Bachelor of Technology — Computer Science &amp; Engineering</h4>
+          <p>Specialization: Machine Learning · Lovely Professional University</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">HSC</div>
+        <div class="timeline-body">
+          <h4>Higher Secondary Certificate</h4>
+          <p>Shahid Bulbul Government College</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">SSC</div>
+        <div class="timeline-body">
+          <h4>Secondary School Certificate</h4>
+          <p>Imam Hossain Academy</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section">
-    <h2 class="section-title">Certifications</h2>
-    <ul class="cert-list">
-      <li>[EDIT: Certification name — Issuer — Year]</li>
-      <li>[EDIT: Remove this section if empty]</li>
-    </ul>
-  </section>
-
   <!-- CONTACT -->
   <section id="contact" class="section">
     <h2 class="section-title">Contact</h2>
-    <p class="prose">Let's connect. I'm open to backend / Python opportunities and collaborations.</p>
+    <p class="prose">Open to Python / backend opportunities and collaborations. Best way to reach me is email or LinkedIn.</p>
     <div class="contact-grid">
-      <a class="contact-card" href="mailto:[EDIT: email]">
+      <a class="contact-card" href="mailto:kamruzzamanmoon13@gmail.com">
         <span class="contact-label">Email</span>
-        <span class="contact-value">[EDIT: email]</span>
+        <span class="contact-value">kamruzzamanmoon13@gmail.com</span>
       </a>
       <a class="contact-card" href="https://github.com/moon121314" target="_blank" rel="noopener">
         <span class="contact-label">GitHub</span>
         <span class="contact-value">@moon121314</span>
       </a>
-      <a class="contact-card" href="[EDIT: LinkedIn URL]" target="_blank" rel="noopener">
+      <a class="contact-card" href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/" target="_blank" rel="noopener">
         <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">[EDIT: handle]</span>
+        <span class="contact-value">kamruzzaman-moon</span>
       </a>
     </div>
   </section>
