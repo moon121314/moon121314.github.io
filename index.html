@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Kamruzzaman — Python Backend Developer</title>
+  <meta name="description" content="Python backend developer focused on FastAPI, PostgreSQL, and containerized APIs." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">MK<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Hi, I'm</p>
+      <h1>Md Kamruzzaman</h1>
+      <h2 class="hero-sub">Python Backend Developer</h2>
+      <p class="hero-text">
+        I build REST APIs with FastAPI, PostgreSQL, and Docker.
+        Currently focused on backend engineering and the foundations of MLOps.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="hero-meta">
+        <span>📍 [EDIT: Location]</span>
+        <span>✉️ [EDIT: email]</span>
+        <span>🔗 <a href="[EDIT: LinkedIn URL]" target="_blank" rel="noopener">LinkedIn</a></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="prose">
+      <p>
+        I'm a Python developer focused on backend engineering. I enjoy building APIs
+        that are actually structured like real products — with authentication,
+        migrations, tests, containers, and CI — not just tutorial endpoints.
+      </p>
+      <p>
+        Right now I'm sharpening my backend skills and slowly moving toward
+        MLOps by learning how software gets deployed, tested, and shipped.
+      </p>
+      <p>
+        [EDIT: Add 1–2 sentences about your background, education, or what got you into programming.]
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>[EDIT: add more if applicable]</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <ul>
+          <li>FastAPI</li>
+          <li>REST API design</li>
+          <li>JWT authentication</li>
+          <li>Pydantic</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>SQLAlchemy ORM</li>
+          <li>Alembic migrations</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>DevOps (foundational)</h3>
+        <ul>
+          <li>Docker</li>
+          <li>Docker Compose</li>
+          <li>GitHub Actions CI</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Testing</h3>
+        <ul>
+          <li>pytest</li>
+        </ul>
+      </div>
+
+    </div>
+    <p class="note">Only real, demonstrated skills are listed. No padding.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <h3 class="subsection-title">Featured</h3>
+    <div class="projects-grid">
+
+      <!-- PROJECT: Expense Tracker API -->
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="assets/expense-tracker.png" alt="Expense Tracker API Swagger docs" />
+        </div>
+        <div class="project-body">
+          <h4>Expense Tracker API</h4>
+          <p class="project-desc">
+            Production-style REST API for tracking personal expenses, with JWT auth,
+            PostgreSQL, Alembic migrations, Docker, and GitHub Actions CI.
+          </p>
+          <ul class="project-features">
+            <li>JWT authentication with password hashing</li>
+            <li>User-scoped expense CRUD</li>
+            <li>Filtering by category and minimum amount</li>
+            <li>Pydantic request validation</li>
+            <li>Dockerized with CI running pytest</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+            <span>SQLAlchemy</span><span>Alembic</span><span>JWT</span>
+            <span>Docker</span><span>pytest</span><span>GitHub Actions</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/moon121314" target="_blank" rel="noopener">Code ↗</a>
+            <span class="muted">Demo: coming soon</span>
+          </div>
+          <p class="project-meta">Backend · Intermediate</p>
+        </div>
+      </article>
+
+    </div>
+
+    <h3 class="subsection-title">Other</h3>
+    <p class="note">More projects coming soon. Follow along on <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a>.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">[EDIT: dates]</div>
+        <div class="timeline-body">
+          <h4>[EDIT: Role / Freelance / Self-study]</h4>
+          <p>[EDIT: Short description of what you did and what you learned.]</p>
+        </div>
+      </div>
+      <p class="note">If you don't have formal experience yet, replace this section with "Self-Directed Learning" and list what you've built.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">[EDIT: years]</div>
+        <div class="timeline-body">
+          <h4>[EDIT: Degree / Program]</h4>
+          <p>[EDIT: Institution]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="cert-list">
+      <li>[EDIT: Certification name — Issuer — Year]</li>
+      <li>[EDIT: Remove this section if empty]</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="prose">Let's connect. I'm open to backend / Python opportunities and collaborations.</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:[EDIT: email]">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">[EDIT: email]</span>
+      </a>
+      <a class="contact-card" href="https://github.com/moon121314" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@moon121314</span>
+      </a>
+      <a class="contact-card" href="[EDIT: LinkedIn URL]" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">[EDIT: handle]</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Md Kamruzzaman. Built with HTML, CSS, and a lot of pytest runs.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
