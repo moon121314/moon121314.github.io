@@ -208,6 +208,7 @@ a:hover { color: #79b8ff; }
   color: var(--text-dim); font-size: 0.88rem;
   font-style: italic; margin-top: 1.25rem;
 }
+.note a { color: var(--accent); }
 
 /* ---------- SKILLS ---------- */
 .skills-grid {
@@ -323,6 +324,11 @@ a:hover { color: #79b8ff; }
   color: var(--accent);
   border: 1px solid rgba(88, 166, 255, 0.25);
 }
+.badge[data-status="live"] {
+  background: rgba(63, 185, 80, 0.12);
+  color: var(--green);
+  border-color: rgba(63, 185, 80, 0.3);
+}
 .project-desc {
   color: var(--text-muted); font-size: 0.94rem;
   margin-bottom: 1.1rem;
@@ -350,6 +356,12 @@ a:hover { color: #79b8ff; }
   padding: 0.22rem 0.55rem;
   border-radius: 5px;
   border: 1px solid rgba(88, 166, 255, 0.18);
+  transition: all .15s ease;
+}
+.tech-tags span:hover {
+  background: rgba(88, 166, 255, 0.14);
+  border-color: rgba(88, 166, 255, 0.35);
+  transform: translateY(-1px);
 }
 .project-links {
   display: flex; gap: 1.25rem; align-items: center;
@@ -400,6 +412,7 @@ a:hover { color: #79b8ff; }
   padding: 1.25rem;
   display: flex; flex-direction: column; gap: 0.35rem;
   transition: border-color .18s ease, transform .18s ease, background .18s ease;
+  text-decoration: none;
 }
 .contact-card:hover {
   border-color: var(--accent);
@@ -436,23 +449,6 @@ a:hover { color: #79b8ff; }
   transform: translateY(0);
 }
 
-/* ---------- MOBILE ---------- */
-@media (max-width: 640px) {
-  .nav-toggle { display: block; }
-  .nav-links {
-    display: none; position: absolute; top: 100%; left: 0; right: 0;
-    background: var(--bg-soft); flex-direction: column;
-    padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    gap: 1.1rem;
-  }
-  .nav-links.open { display: flex; }
-  .hero { padding: 4rem 1.5rem 3rem; }
-  .section { padding: 3.5rem 1.5rem; }
-  .section-title { font-size: 1.6rem; }
-  .hero-meta { flex-direction: column; gap: 0.5rem; }
-  .projects-grid { grid-template-columns: 1fr; }
-}
 /* ---------- ACCESSIBILITY ---------- */
 a:focus-visible,
 button:focus-visible {
@@ -477,25 +473,24 @@ button:focus-visible {
   }
 }
 
-/* ---------- POLISH ---------- */
-.badge[data-status="live"] {
-  background: rgba(63, 185, 80, 0.12);
-  color: var(--green);
-  border-color: rgba(63, 185, 80, 0.3);
+/* ---------- MOBILE ---------- */
+@media (max-width: 640px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--bg-soft); flex-direction: column;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    gap: 1.1rem;
+  }
+  .nav-links.open { display: flex; }
+  .hero { padding: 4rem 1.5rem 3rem; }
+  .section { padding: 3.5rem 1.5rem; }
+  .section-title { font-size: 1.6rem; }
+  .hero-meta { flex-direction: column; gap: 0.5rem; }
+  .projects-grid { grid-template-columns: 1fr; }
 }
 
-.tech-tags span:hover {
-  background: rgba(88, 166, 255, 0.14);
-  border-color: rgba(88, 166, 255, 0.35);
-  transform: translateY(-1px);
-  transition: all .15s ease;
-}
-
-.contact-card {
-  text-decoration: none;
-}
-
-/* Slightly tighter mobile spacing */
 @media (max-width: 480px) {
   .hero-actions .btn {
     width: 100%;
