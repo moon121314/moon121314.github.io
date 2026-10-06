@@ -1,320 +1,1110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md Kamruzzaman — Python Backend Developer</title>
-  <meta name="description" content="Python backend developer building production REST APIs with FastAPI, PostgreSQL, Docker, and CI/CD. Deployed to Render. Currently expanding into MLOps." />
-  <meta name="author" content="Md Kamruzzaman" />
+    <meta charset="UTF-8">
 
-  <meta property="og:title" content="Md Kamruzzaman — Python Backend Developer" />
-  <meta property="og:description" content="FastAPI · PostgreSQL · Docker · CI/CD · Kubernetes · MLOps" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./preview.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#0d1117" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <meta
+        name="description"
+        content="Md Kamruzzaman — Python Backend Developer building production-style APIs, ML systems, and MLOps projects."
+    >
+
+    <meta
+        name="author"
+        content="Md Kamruzzaman"
+    >
+
+    <meta
+        name="keywords"
+        content="Md Kamruzzaman, Python Backend Developer, FastAPI, PostgreSQL, MLOps, Machine Learning, Docker, Kubernetes"
+    >
+
+    <meta name="theme-color" content="#0b0f19">
+
+    <meta
+        property="og:title"
+        content="Md Kamruzzaman | Python Backend Developer"
+    >
+
+    <meta
+        property="og:description"
+        content="Python Backend Developer building production-style APIs and MLOps systems."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://moon121314.github.io/"
+    >
+
+    <title>
+        Md Kamruzzaman | Python Backend Developer
+    </title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#home" class="logo">MK<span>.</span></a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- ================= HEADER ================= -->
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="hero-inner">
-      <div class="hero-status">
-        <span class="status-dot"></span>
-        Available for Python backend roles
-      </div>
-      <p class="hero-eyebrow">Hi, I'm</p>
-      <h1>Md Kamruzzaman</h1>
-      <h2 class="hero-sub">Python Backend Developer</h2>
-      <p class="hero-text">
-        Computer Science graduate with a Machine Learning specialization,
-        now focused on backend engineering. I build production-oriented REST APIs
-        with FastAPI, PostgreSQL, and Docker — tested, containerized, CI/CD-automated,
-        and deployed to the cloud. Currently expanding into MLOps.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View Projects →</a>
-        <a class="btn btn-ghost" href="./Md_Kamruzzaman_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-        <a class="btn btn-ghost" href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub ↗</a>
-      </div>
-      <div class="hero-meta">
-        <a href="mailto:kamruzzamanmoon13@gmail.com">✉️ kamruzzamanmoon13@gmail.com</a>
-        <a href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-        <a href="https://github.com/moon121314" target="_blank" rel="noopener">💻 GitHub</a>
-      </div>
-    </div>
-  </header>
+    <header class="site-header">
 
-  <!-- ABOUT -->
-  <section id="about" class="section reveal">
-    <h2 class="section-title">About Me</h2>
-    <div class="prose">
-      <p>
-        I'm a Computer Science graduate with a specialization in Machine Learning,
-        currently focused on backend engineering. I enjoy building APIs that are
-        structured like real products — with authentication, migrations, tests,
-        containers, CI, and cloud deployment — rather than tutorial-level endpoints.
-      </p>
-      <p>
-        My short-term goal is to grow as a <strong>Python Backend Developer</strong>.
-        My long-term goal is to become an <strong>MLOps Engineer</strong>, combining
-        backend engineering, DevOps, and machine learning to build and maintain
-        production ML systems.
-      </p>
-      <p>
-        Right now I'm deepening my backend skills and expanding into MLOps by
-        learning how software gets built, tested, deployed, and monitored in production.
-      </p>
-    </div>
-  </section>
+        <div class="container nav-container">
 
-  <!-- SKILLS -->
-  <section id="skills" class="section reveal">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
+            <a
+                href="#home"
+                class="logo"
+                aria-label="Md Kamruzzaman home"
+            >
+                MK<span>.</span>
+            </a>
 
-      <div class="skill-card">
-        <h3>Languages</h3>
-        <ul>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Bash (basic)</li>
-        </ul>
-      </div>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-      <div class="skill-card">
-        <h3>Backend</h3>
-        <ul>
-          <li>FastAPI</li>
-          <li>REST API design</li>
-          <li>Pydantic</li>
-          <li>JWT authentication</li>
-          <li>Dependency injection</li>
-        </ul>
-      </div>
+            <nav
+                class="nav-links"
+                id="primary-navigation"
+                aria-label="Primary navigation"
+            >
 
-      <div class="skill-card">
-        <h3>Databases</h3>
-        <ul>
-          <li>PostgreSQL</li>
-          <li>SQLAlchemy ORM</li>
-          <li>Alembic migrations</li>
-          <li>Query optimization</li>
-        </ul>
-      </div>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#learning" class="nav-link">Learning</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
 
-      <div class="skill-card">
-        <h3>DevOps &amp; Cloud</h3>
-        <ul>
-          <li>Docker &amp; Compose</li>
-          <li>GitHub Actions (CI/CD)</li>
-          <li>Kubernetes (basics)</li>
-          <li>Render + Neon</li>
-          <li>Git &amp; GitHub</li>
-        </ul>
-      </div>
+            </nav>
 
-      <div class="skill-card">
-        <h3>ML &amp; MLOps</h3>
-        <ul>
-          <li>scikit-learn</li>
-          <li>NumPy &amp; Pandas</li>
-          <li>MLflow</li>
-          <li>Prometheus &amp; Grafana</li>
-          <li>Evidently (drift)</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Testing &amp; Quality</h3>
-        <ul>
-          <li>pytest</li>
-          <li>FastAPI TestClient</li>
-          <li>Ruff (linting)</li>
-          <li>Debugging</li>
-        </ul>
-      </div>
-
-    </div>
-    <p class="note">Only real, demonstrated skills are listed above. Anything still in progress lives under "Currently Learning."</p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section reveal">
-    <h2 class="section-title">Projects</h2>
-
-    <h3 class="subsection-title">Featured</h3>
-    <div class="projects-grid">
-
-      <!-- ===== ML EXPENSE PLATFORM ===== -->
-      <article class="project-card">
-        <div class="project-thumb project-thumb--ml">
-          <span class="thumb-label">ML</span>
-          <span class="thumb-tag">Machine Learning · FastAPI</span>
         </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h4>ML Expense Platform</h4>
-            <span class="badge" data-status="live">Live</span>
-          </div>
-          <p class="project-desc">
-            A production-style ML serving platform that predicts expense categories
-            from free-text descriptions ("Starbucks latte" → food). Includes a full
-            MLOps pipeline — training with MLflow tracking, FastAPI serving, Docker
-            containerization, Kubernetes deployment, and Prometheus/Grafana monitoring.
-          </p>
-          <ul class="project-features">
-            <li>scikit-learn pipeline (TF-IDF + Logistic Regression)</li>
-            <li>MLflow experiment tracking with parameter sweeps</li>
-            <li>FastAPI serving with Pydantic validation</li>
-            <li>Model loaded once at startup for fast inference</li>
-            <li>Prometheus metrics + Grafana dashboard</li>
-            <li>Data drift detection with Evidently</li>
-            <li>Docker + docker-compose (api + prometheus + grafana)</li>
-            <li>Kubernetes Deployment + Service with health probes</li>
-          </ul>
-          <div class="tech-tags">
-            <span>Python</span><span>FastAPI</span><span>scikit-learn</span>
-            <span>MLflow</span><span>Docker</span><span>Kubernetes</span>
-            <span>Prometheus</span><span>Grafana</span><span>Evidently</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/moon121314/ml-expense-platform" target="_blank" rel="noopener">Code ↗</a>
-            <a href="https://ml-expense-platform.onrender.com/docs" target="_blank" rel="noopener">Live Demo ↗</a>
-          </div>
-          <p class="project-meta">ML Serving / MLOps · Advanced · Deployed</p>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section
+            id="home"
+            class="hero section"
+        >
+
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">
+                        Python Backend Developer
+                    </p>
+
+                    <h1>
+                        Building reliable
+                        <span>backend systems</span>
+                        and ML platforms.
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm Md Kamruzzaman, a Computer Science graduate
+                        focused on Python backend development and gradually
+                        expanding into production-grade MLOps.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            View Projects
+                        </a>
+
+                        <a
+                            href="Md_Kamruzzaman_CV.pdf"
+                            class="btn btn-secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View CV
+                        </a>
+
+                    </div>
+
+                    <div class="hero-links">
+
+                        <a
+                            href="https://github.com/moon121314"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a href="mailto:kamruzzamanmoon13@gmail.com">
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card reveal">
+
+                    <div class="terminal">
+
+                        <div class="terminal-top">
+
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="terminal-title">
+                                backend.py
+                            </span>
+
+                        </div>
+
+                        <div class="terminal-body">
+
+                            <p>
+                                <span class="code-purple">class</span>
+                                BackendDeveloper:
+                            </p>
+
+                            <p class="indent">
+                                stack =
+                                <span class="code-green">
+                                    ["Python", "FastAPI"]
+                                </span>
+                            </p>
+
+                            <p class="indent">
+                                database =
+                                <span class="code-green">
+                                    "PostgreSQL"
+                                </span>
+                            </p>
+
+                            <p class="indent">
+                                security =
+                                <span class="code-green">
+                                    "JWT"
+                                </span>
+                            </p>
+
+                            <p class="indent">
+                                deployment =
+                                <span class="code-green">
+                                    ["Docker", "CI/CD"]
+                                </span>
+                            </p>
+
+                            <p class="indent">
+                                mlops =
+                                <span class="code-green">
+                                    ["MLflow", "Kubernetes"]
+                                </span>
+                            </p>
+
+                            <p class="cursor-line">
+                                <span>$</span>
+                                building_production_systems()
+                                <span class="cursor"></span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section
+            id="about"
+            class="section section-alt"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        ABOUT
+                    </p>
+
+                    <h2>
+                        Backend first. MLOps next.
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text reveal">
+
+                        <p>
+                            I build backend systems using Python and FastAPI,
+                            with a focus on clean architecture, authentication,
+                            databases, testing, containerization and deployment.
+                        </p>
+
+                        <p>
+                            My current direction is to become a strong
+                            Python Backend Developer first and then move deeper
+                            into MLOps and production machine learning systems.
+                        </p>
+
+                        <p>
+                            Instead of building only simple CRUD applications,
+                            I focus on projects that demonstrate real engineering
+                            concepts such as JWT authentication, PostgreSQL,
+                            migrations, automated testing, CI/CD, Docker,
+                            ML model serving and monitoring.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-stats reveal">
+
+                        <div class="stat-card">
+
+                            <strong>2</strong>
+
+                            <span>
+                                Production-style<br>
+                                portfolio projects
+                            </span>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <strong>91%</strong>
+
+                            <span>
+                                Verified test<br>
+                                coverage
+                            </span>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <strong>FastAPI</strong>
+
+                            <span>
+                                Primary backend<br>
+                                framework
+                            </span>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <strong>MLOps</strong>
+
+                            <span>
+                                Current advanced<br>
+                                learning direction
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section
+            id="skills"
+            class="section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        SKILLS
+                    </p>
+
+                    <h2>
+                        Technical toolkit
+                    </h2>
+
+                    <p>
+                        Technologies I'm using and actively developing.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+
+                        <div class="skill-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Languages
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Java</span>
+                            <span>Bash</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card reveal">
+
+                        <div class="skill-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Backend
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>FastAPI</span>
+                            <span>REST API</span>
+                            <span>SQLAlchemy</span>
+                            <span>Alembic</span>
+                            <span>JWT</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card reveal">
+
+                        <div class="skill-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Database
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>PostgreSQL</span>
+                            <span>SQL</span>
+                            <span>Neon</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card reveal">
+
+                        <div class="skill-number">
+                            04
+                        </div>
+
+                        <h3>
+                            DevOps
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>Docker</span>
+                            <span>Docker Compose</span>
+                            <span>GitHub Actions</span>
+                            <span>Render</span>
+                            <span>CI/CD</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card reveal">
+
+                        <div class="skill-number">
+                            05
+                        </div>
+
+                        <h3>
+                            ML / MLOps
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>scikit-learn</span>
+                            <span>MLflow</span>
+                            <span>Evidently</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                            <span>Kubernetes (basics)</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card reveal">
+
+                        <div class="skill-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Testing & Quality
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>pytest</span>
+                            <span>91% coverage</span>
+                            <span>Ruff</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section
+            id="projects"
+            class="section section-alt"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        PROJECTS
+                    </p>
+
+                    <h2>
+                        Selected work
+                    </h2>
+
+                    <p>
+                        Practical systems built to demonstrate backend
+                        engineering and production ML concepts.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 1 -->
+
+                    <article class="project-card featured reveal">
+
+                        <div class="project-top">
+
+                            <div>
+
+                                <p class="project-type">
+                                    Machine Learning / MLOps
+                                </p>
+
+                                <h3>
+                                    ML Expense Platform
+                                </h3>
+
+                            </div>
+
+                            <span class="project-status">
+                                Deployed
+                            </span>
+
+                        </div>
+
+
+                        <p class="project-description">
+
+                            A production-style machine learning platform
+                            for serving expense predictions through a
+                            FastAPI API, with experiment tracking,
+                            monitoring and containerized deployment.
+
+                        </p>
+
+
+                        <ul class="project-features">
+
+                            <li>
+                                FastAPI ML prediction endpoint
+                            </li>
+
+                            <li>
+                                scikit-learn model pipeline
+                            </li>
+
+                            <li>
+                                MLflow experiment tracking
+                            </li>
+
+                            <li>
+                                Dockerized application
+                            </li>
+
+                            <li>
+                                Prometheus + Grafana monitoring
+                            </li>
+
+                            <li>
+                                Evidently-based ML monitoring
+                            </li>
+
+                            <li>
+                                Kubernetes Deployment + Service
+                                with health probes
+                            </li>
+
+                        </ul>
+
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>scikit-learn</span>
+                            <span>MLflow</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a
+                                href="https://github.com/moon121314/ml-expense-platform"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link primary-link"
+                            >
+                                View GitHub
+                                <span>↗</span>
+                            </a>
+
+                            <a
+                                href="https://ml-expense-platform.onrender.com/docs"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                Live API
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+
+                            <div>
+
+                                <p class="project-type">
+                                    Python Backend / REST API
+                                </p>
+
+                                <h3>
+                                    Expense Tracker API
+                                </h3>
+
+                            </div>
+
+                            <span class="project-status">
+                                Deployed
+                            </span>
+
+                        </div>
+
+
+                        <p class="project-description">
+
+                            A secure REST API built with FastAPI and
+                            PostgreSQL, designed around authentication,
+                            user isolation, database migrations,
+                            testing and CI/CD.
+
+                        </p>
+
+
+                        <ul class="project-features">
+
+                            <li>
+                                JWT authentication
+                            </li>
+
+                            <li>
+                                PostgreSQL + SQLAlchemy
+                            </li>
+
+                            <li>
+                                Alembic database migrations
+                            </li>
+
+                            <li>
+                                User-isolated expense management
+                            </li>
+
+                            <li>
+                                Pagination and filtering
+                            </li>
+
+                            <li>
+                                pytest automated testing with
+                                91% coverage
+                            </li>
+
+                            <li>
+                                Dockerized development
+                            </li>
+
+                            <li>
+                                GitHub Actions CI/CD
+                            </li>
+
+                            <li>
+                                Deployed with Render + Neon
+                            </li>
+
+                        </ul>
+
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>SQLAlchemy</span>
+                            <span>Alembic</span>
+                            <span>JWT</span>
+                            <span>Docker</span>
+                            <span>pytest</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a
+                                href="https://github.com/moon121314/expense-tracker"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link primary-link"
+                            >
+                                View GitHub
+                                <span>↗</span>
+                            </a>
+
+                            <a
+                                href="https://expense-tracker-adds.onrender.com/docs"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                Live API
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEARNING ================= -->
+
+        <section
+            id="learning"
+            class="section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        CURRENTLY LEARNING
+                    </p>
+
+                    <h2>
+                        Going deeper into MLOps
+                    </h2>
+
+                    <p>
+                        Building on my backend foundation with
+                        production machine learning infrastructure.
+                    </p>
+
+                </div>
+
+
+                <div class="learning-grid">
+
+                    <div class="learning-item reveal">
+
+                        <span class="learning-index">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Data Versioning
+                            </h3>
+
+                            <p>
+                                DVC and reproducible ML pipelines.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learning-item reveal">
+
+                        <span class="learning-index">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Model Registry
+                            </h3>
+
+                            <p>
+                                Model lifecycle and version management.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learning-item reveal">
+
+                        <span class="learning-index">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Automated Retraining
+                            </h3>
+
+                            <p>
+                                Triggering model pipelines from
+                                monitoring signals.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learning-item reveal">
+
+                        <span class="learning-index">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Production Deployment
+                            </h3>
+
+                            <p>
+                                Kubernetes, CI/CD and reliable
+                                model-serving workflows.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section
+            id="education"
+            class="section section-alt"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        EDUCATION
+                    </p>
+
+                    <h2>
+                        Academic background
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                B.Tech
+                            </span>
+
+                            <h3>
+                                Lovely Professional University
+                            </h3>
+
+                            <p class="timeline-role">
+                                Computer Science & Engineering
+                                — Machine Learning Specialization
+                            </p>
+
+                            <p>
+                                Focused on computer science fundamentals,
+                                programming, machine learning and
+                                software development.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Higher Secondary
+                            </span>
+
+                            <h3>
+                                Shahid Bulbul Government College
+                            </h3>
+
+                            <p>
+                                Higher Secondary Certificate.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Secondary
+                            </span>
+
+                            <h3>
+                                Imam Hossain Academy
+                            </h3>
+
+                            <p>
+                                Secondary School Certificate.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section
+            id="contact"
+            class="section contact-section"
+        >
+
+            <div class="container">
+
+                <div class="contact-card reveal">
+
+                    <p class="section-label">
+                        CONTACT
+                    </p>
+
+                    <h2>
+                        Let's build something useful.
+                    </h2>
+
+                    <p>
+                        I'm currently open to Python backend
+                        internship and junior opportunities, while
+                        continuing to develop my MLOps skills.
+                    </p>
+
+
+                    <div class="contact-actions">
+
+                        <a
+                            href="mailto:kamruzzamanmoon13@gmail.com"
+                            class="btn btn-primary"
+                        >
+                            Email Me
+                        </a>
+
+                        <a
+                            href="https://github.com/moon121314"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            LinkedIn
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <p>
+                © <span id="year"></span>
+                Md Kamruzzaman. All rights reserved.
+            </p>
+
+            <p>
+                Built with HTML, CSS & JavaScript.
+            </p>
+
         </div>
-      </article>
 
-      <!-- ===== EXPENSE TRACKER API ===== -->
-      <article class="project-card">
-        <div class="project-thumb project-thumb--api">
-          <span class="thumb-label">API</span>
-          <span class="thumb-tag">REST · JWT · PostgreSQL</span>
-        </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h4>Expense Tracker API</h4>
-            <span class="badge" data-status="live">Live</span>
-          </div>
-          <p class="project-desc">
-            Production-oriented REST API for tracking personal expenses, built with
-            FastAPI, PostgreSQL, and JWT authentication. Containerized, tested with
-            pytest (91% coverage), and deployed live to Render via GitHub Actions CI.
-          </p>
-          <ul class="project-features">
-            <li>User registration and login with JWT</li>
-            <li>Bcrypt password hashing + protected endpoints</li>
-            <li>User-scoped data isolation (404, not 403)</li>
-            <li>Full CRUD for expenses</li>
-            <li>Filtering by category and minimum amount</li>
-            <li>Pydantic request validation + auto OpenAPI docs</li>
-            <li>PostgreSQL + SQLAlchemy + Alembic migrations</li>
-            <li>Dockerized with GitHub Actions CI</li>
-            <li>Deployed live to Render + Neon</li>
-          </ul>
-          <div class="tech-tags">
-            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
-            <span>SQLAlchemy</span><span>Alembic</span><span>JWT</span>
-            <span>Docker</span><span>pytest</span><span>GitHub Actions</span>
-            <span>Render</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/moon121314/expense-tracker" target="_blank" rel="noopener">Code ↗</a>
-            <a href="https://expense-tracker-adds.onrender.com/docs" target="_blank" rel="noopener">Live Demo ↗</a>
-          </div>
-          <p class="project-meta">Backend / REST API · Intermediate · Deployed</p>
-        </div>
-      </article>
+    </footer>
 
-    </div>
 
-    <h3 class="subsection-title">Coming Soon</h3>
-    <p class="note">
-      Building a production MLOps platform (Days 31–180): data versioning with DVC,
-      model registry, automated retraining, drift-triggered pipelines, blue-green
-      deployment. Follow along on
-      <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a>.
-    </p>
-  </section>
+    <script src="script.js"></script>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section reveal">
-    <h2 class="section-title">Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">B.Tech</div>
-        <div class="timeline-body">
-          <h4>Bachelor of Technology — Computer Science &amp; Engineering</h4>
-          <p>Specialization: Machine Learning · Lovely Professional University</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">HSC</div>
-        <div class="timeline-body">
-          <h4>Higher Secondary Certificate</h4>
-          <p>Shahid Bulbul Government College</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">SSC</div>
-        <div class="timeline-body">
-          <h4>Secondary School Certificate</h4>
-          <p>Imam Hossain Academy</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section reveal">
-    <h2 class="section-title">Contact</h2>
-    <div class="prose">
-      <p>
-        Open to Python / backend opportunities, internships, and collaborations.
-        Best way to reach me is email or LinkedIn.
-      </p>
-    </div>
-    <div class="contact-grid">
-      <a class="contact-card" href="mailto:kamruzzamanmoon13@gmail.com">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">kamruzzamanmoon13@gmail.com</span>
-      </a>
-      <a class="contact-card" href="https://github.com/moon121314" target="_blank" rel="noopener">
-        <span class="contact-label">GitHub</span>
-        <span class="contact-value">@moon121314</span>
-      </a>
-      <a class="contact-card" href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/" target="_blank" rel="noopener">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">kamruzzaman-moon</span>
-      </a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© <span id="year">2026</span> Md Kamruzzaman. Built with HTML, CSS, and a lot of pytest runs.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
