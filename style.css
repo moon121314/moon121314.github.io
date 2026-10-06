@@ -453,3 +453,57 @@ a:hover { color: #79b8ff; }
   .hero-meta { flex-direction: column; gap: 0.5rem; }
   .projects-grid { grid-template-columns: 1fr; }
 }
+/* ---------- ACCESSIBILITY ---------- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------- POLISH ---------- */
+.badge[data-status="live"] {
+  background: rgba(63, 185, 80, 0.12);
+  color: var(--green);
+  border-color: rgba(63, 185, 80, 0.3);
+}
+
+.tech-tags span:hover {
+  background: rgba(88, 166, 255, 0.14);
+  border-color: rgba(88, 166, 255, 0.35);
+  transform: translateY(-1px);
+  transition: all .15s ease;
+}
+
+.contact-card {
+  text-decoration: none;
+}
+
+/* Slightly tighter mobile spacing */
+@media (max-width: 480px) {
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}

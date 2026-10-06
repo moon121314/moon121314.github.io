@@ -4,11 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Md Kamruzzaman — Python Backend Developer</title>
-  <meta name="description" content="Python backend developer building REST APIs with FastAPI, PostgreSQL, and Docker. Deployed to Render. Working toward MLOps." />
+  <meta name="description" content="Python backend developer building production REST APIs with FastAPI, PostgreSQL, Docker, and CI/CD. Deployed to Render. Currently expanding into MLOps." />
   <meta name="author" content="Md Kamruzzaman" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Md Kamruzzaman — Python Backend Developer" />
-  <meta property="og:description" content="FastAPI · PostgreSQL · Docker · CI/CD · Cloud Deployment" />
+  <meta property="og:description" content="FastAPI · PostgreSQL · Docker · CI/CD · Kubernetes · MLOps" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="./preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0d1117" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,18 +42,20 @@
     <div class="hero-inner">
       <div class="hero-status">
         <span class="status-dot"></span>
-        Available for backend roles
+        Available for Python backend roles
       </div>
       <p class="hero-eyebrow">Hi, I'm</p>
       <h1>Md Kamruzzaman</h1>
       <h2 class="hero-sub">Python Backend Developer</h2>
       <p class="hero-text">
-        Computer Science graduate specializing in Machine Learning, now focused on
-        backend engineering. I build production-oriented REST APIs with FastAPI,
-        PostgreSQL, and Docker — tested, containerized, and deployed to the cloud.
+        Computer Science graduate with a Machine Learning specialization,
+        now focused on backend engineering. I build production-oriented REST APIs
+        with FastAPI, PostgreSQL, and Docker — tested, containerized, CI/CD-automated,
+        and deployed to the cloud. Currently expanding into MLOps.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">View Projects →</a>
+        <a class="btn btn-ghost" href="./Md_Kamruzzaman_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         <a class="btn btn-ghost" href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="hero-meta">
@@ -91,6 +99,7 @@
         <ul>
           <li>Python</li>
           <li>SQL</li>
+          <li>Bash (basic)</li>
         </ul>
       </div>
 
@@ -101,6 +110,7 @@
           <li>REST API design</li>
           <li>Pydantic</li>
           <li>JWT authentication</li>
+          <li>Dependency injection</li>
         </ul>
       </div>
 
@@ -110,42 +120,44 @@
           <li>PostgreSQL</li>
           <li>SQLAlchemy ORM</li>
           <li>Alembic migrations</li>
-          <li>Database relationships</li>
+          <li>Query optimization</li>
         </ul>
       </div>
 
       <div class="skill-card">
-        <h3>DevOps</h3>
+        <h3>DevOps &amp; Cloud</h3>
         <ul>
-          <li>Docker</li>
-          <li>Docker Compose</li>
+          <li>Docker &amp; Compose</li>
+          <li>GitHub Actions (CI/CD)</li>
+          <li>Kubernetes (basics)</li>
+          <li>Render + Neon</li>
           <li>Git &amp; GitHub</li>
-          <li>GitHub Actions (CI)</li>
-          <li>Render (cloud deployment)</li>
         </ul>
       </div>
 
       <div class="skill-card">
-        <h3>Testing &amp; Code Quality</h3>
+        <h3>ML &amp; MLOps</h3>
+        <ul>
+          <li>scikit-learn</li>
+          <li>NumPy &amp; Pandas</li>
+          <li>MLflow</li>
+          <li>Prometheus &amp; Grafana</li>
+          <li>Evidently (drift)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Testing &amp; Quality</h3>
         <ul>
           <li>pytest</li>
-          <li>API testing</li>
+          <li>FastAPI TestClient</li>
+          <li>Ruff (linting)</li>
           <li>Debugging</li>
         </ul>
       </div>
 
-      <div class="skill-card">
-        <h3>Currently Learning</h3>
-        <ul>
-          <li>Advanced FastAPI</li>
-          <li>System design</li>
-          <li>Data structures &amp; algorithms</li>
-          <li>MLOps</li>
-        </ul>
-      </div>
-
     </div>
-    <p class="note">Only real, demonstrated skills are listed at the top. Anything still in progress lives under "Currently Learning."</p>
+    <p class="note">Only real, demonstrated skills are listed above. Anything still in progress lives under "Currently Learning."</p>
   </section>
 
   <!-- PROJECTS -->
@@ -167,32 +179,30 @@
             <span class="badge">Featured</span>
           </div>
           <p class="project-desc">
-            An ML-driven extension of the Expense Tracker: a FastAPI backend that
-            combines authenticated expense management with a machine learning layer
-            for automatic category prediction and spending insights — a first step
-            toward production MLOps.
+            A production-style ML serving platform that predicts expense categories
+            from free-text descriptions ("Starbucks latte" → food). Includes a full
+            MLOps pipeline — training with MLflow tracking, FastAPI serving, Docker
+            containerization, Kubernetes deployment, and Prometheus/Grafana monitoring.
           </p>
           <ul class="project-features">
-            <li>JWT auth with user-scoped data isolation</li>
-            <li>Full CRUD for expenses and categories</li>
-            <li>ML model for automatic expense categorization</li>
-            <li>Spending insights and summary endpoints</li>
-            <li>PostgreSQL + SQLAlchemy + Alembic migrations</li>
-            <li>Model served through the API layer</li>
-            <li>Dockerized with CI via GitHub Actions</li>
-            <li>Deployed to Render</li>
+            <li>scikit-learn pipeline (TF-IDF + Logistic Regression)</li>
+            <li>MLflow experiment tracking with parameter sweeps</li>
+            <li>FastAPI serving with Pydantic validation</li>
+            <li>Model loaded once at startup for fast inference</li>
+            <li>Prometheus metrics + Grafana dashboard</li>
+            <li>Data drift detection with Evidently</li>
+            <li>Docker + docker-compose (api + prometheus + grafana)</li>
+            <li>Kubernetes Deployment + Service with health probes</li>
           </ul>
           <div class="tech-tags">
-            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
-            <span>SQLAlchemy</span><span>Alembic</span><span>JWT</span>
-            <span>scikit-learn</span><span>pandas</span><span>Docker</span>
-            <span>pytest</span><span>GitHub Actions</span><span>Render</span>
+            <span>Python</span><span>FastAPI</span><span>scikit-learn</span>
+            <span>MLflow</span><span>Docker</span><span>Kubernetes</span>
+            <span>Prometheus</span><span>Grafana</span><span>Evidently</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/moon121314/ml-expense-platform" target="_blank" rel="noopener">Code ↗</a>
-            <a href="https://ml-expense-platform.onrender.com/docs" target="_blank" rel="noopener">Live Demo ↗</a>
           </div>
-          <p class="project-meta">Backend + ML / REST API · Advanced · Deployed</p>
+          <p class="project-meta">ML Serving / MLOps · Advanced · Containerized + K8s</p>
         </div>
       </article>
 
@@ -205,22 +215,23 @@
         <div class="project-body">
           <div class="project-head">
             <h4>Expense Tracker API</h4>
+            <span class="badge">Live</span>
           </div>
           <p class="project-desc">
             Production-oriented REST API for tracking personal expenses, built with
             FastAPI, PostgreSQL, and JWT authentication. Containerized, tested with
-            pytest, and deployed live to Render via a GitHub Actions CI pipeline.
+            pytest (91% coverage), and deployed live to Render via GitHub Actions CI.
           </p>
           <ul class="project-features">
             <li>User registration and login with JWT</li>
-            <li>Password hashing and protected endpoints</li>
-            <li>User-specific data isolation</li>
+            <li>Bcrypt password hashing + protected endpoints</li>
+            <li>User-scoped data isolation (404, not 403)</li>
             <li>Full CRUD for expenses</li>
             <li>Filtering by category and minimum amount</li>
-            <li>Pydantic request validation</li>
+            <li>Pydantic request validation + auto OpenAPI docs</li>
             <li>PostgreSQL + SQLAlchemy + Alembic migrations</li>
             <li>Dockerized with GitHub Actions CI</li>
-            <li>Deployed live to Render</li>
+            <li>Deployed live to Render + Neon</li>
           </ul>
           <div class="tech-tags">
             <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
@@ -238,8 +249,13 @@
 
     </div>
 
-    <h3 class="subsection-title">Other</h3>
-    <p class="note">More projects coming soon. Follow along on <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a>.</p>
+    <h3 class="subsection-title">Coming Soon</h3>
+    <p class="note">
+      Building a production MLOps platform (Days 31–180): data versioning with DVC,
+      model registry, automated retraining, drift-triggered pipelines, blue-green
+      deployment. Follow along on
+      <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a>.
+    </p>
   </section>
 
   <!-- EDUCATION -->
@@ -273,7 +289,12 @@
   <!-- CONTACT -->
   <section id="contact" class="section reveal">
     <h2 class="section-title">Contact</h2>
-    <p class="prose">Open to Python / backend opportunities and collaborations. Best way to reach me is email or LinkedIn.</p>
+    <div class="prose">
+      <p>
+        Open to Python / backend opportunities, internships, and collaborations.
+        Best way to reach me is email or LinkedIn.
+      </p>
+    </div>
     <div class="contact-grid">
       <a class="contact-card" href="mailto:kamruzzamanmoon13@gmail.com">
         <span class="contact-label">Email</span>
@@ -291,7 +312,7 @@
   </section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Md Kamruzzaman. Built with HTML, CSS, and a lot of pytest runs.</p>
+    <p>© <span id="year">2026</span> Md Kamruzzaman. Built with HTML, CSS, and a lot of pytest runs.</p>
   </footer>
 
   <script src="script.js"></script>
