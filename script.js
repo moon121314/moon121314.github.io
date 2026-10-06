@@ -1,7 +1,7 @@
 "use strict";
 
 /* =========================================================
-   SAFE HELPERS
+   SAFE DOM HELPERS
 ========================================================= */
 
 const $ = (selector, parent = document) =>
@@ -18,7 +18,8 @@ const $$ = (selector, parent = document) =>
 const yearElement = $("#year");
 
 if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
+    yearElement.textContent =
+        new Date().getFullYear();
 }
 
 
@@ -49,7 +50,9 @@ const closeNavigation = () => {
         "Open navigation"
     );
 
-    document.body.classList.remove("nav-open");
+    document.body.classList.remove(
+        "nav-open"
+    );
 };
 
 
@@ -71,26 +74,30 @@ const openNavigation = () => {
         "Close navigation"
     );
 
-    document.body.classList.add("nav-open");
+    document.body.classList.add(
+        "nav-open"
+    );
 };
 
 
 if (navToggle && navLinks) {
 
-    navToggle.addEventListener("click", () => {
+    navToggle.addEventListener(
+        "click",
+        () => {
 
-        const isOpen =
-            navToggle.getAttribute(
-                "aria-expanded"
-            ) === "true";
+            const isOpen =
+                navToggle.getAttribute(
+                    "aria-expanded"
+                ) === "true";
 
-        if (isOpen) {
-            closeNavigation();
-        } else {
-            openNavigation();
+            if (isOpen) {
+                closeNavigation();
+            } else {
+                openNavigation();
+            }
         }
-
-    });
+    );
 
 
     navItems.forEach((item) => {
@@ -103,36 +110,41 @@ if (navToggle && navLinks) {
     });
 
 
-    document.addEventListener("click", (event) => {
+    document.addEventListener(
+        "click",
+        (event) => {
 
-        if (
-            !navLinks.contains(event.target) &&
-            !navToggle.contains(event.target)
-        ) {
-            closeNavigation();
+            if (
+                !navLinks.contains(event.target) &&
+                !navToggle.contains(event.target)
+            ) {
+                closeNavigation();
+            }
         }
+    );
 
-    });
 
+    document.addEventListener(
+        "keydown",
+        (event) => {
 
-    document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
 
-        if (event.key === "Escape") {
-            closeNavigation();
+                closeNavigation();
 
-            navToggle.focus();
+                navToggle.focus();
+            }
         }
-
-    });
-
+    );
 }
 
 
 /* =========================================================
-   REVEAL ON SCROLL
+   REVEAL ELEMENTS ON SCROLL
 ========================================================= */
 
-const revealElements = $$(".reveal");
+const revealElements =
+    $$(".reveal");
 
 
 if (
@@ -150,18 +162,21 @@ if (
                         return;
                     }
 
-                    entry.target.classList.add("visible");
+                    entry.target.classList.add(
+                        "visible"
+                    );
 
                     observer.unobserve(
                         entry.target
                     );
-
                 });
 
             },
             {
                 threshold: 0.12,
-                rootMargin: "0px 0px -40px 0px"
+
+                rootMargin:
+                    "0px 0px -40px 0px"
             }
         );
 
@@ -179,7 +194,6 @@ if (
         element.classList.add("visible");
 
     });
-
 }
 
 
@@ -187,7 +201,8 @@ if (
    ACTIVE NAVIGATION
 ========================================================= */
 
-const sections = $$("main section[id]");
+const sections =
+    $$("main section[id]");
 
 
 if (
@@ -229,8 +244,11 @@ if (
                 navItems.forEach((item) => {
 
                     const isActive =
-                        item.getAttribute("href") ===
+                        item.getAttribute(
+                            "href"
+                        ) ===
                         `#${activeId}`;
+
 
                     item.classList.toggle(
                         "active",
@@ -244,7 +262,11 @@ if (
                 rootMargin:
                     "-30% 0px -55% 0px",
 
-                threshold: [0.05, 0.15, 0.3]
+                threshold: [
+                    0.05,
+                    0.15,
+                    0.3
+                ]
             }
         );
 
@@ -254,15 +276,14 @@ if (
         sectionObserver.observe(section);
 
     });
-
 }
 
 
 /* =========================================================
-   CLOSE MOBILE NAV ON RESIZE
+   CLOSE NAVIGATION AFTER RESIZE
 ========================================================= */
 
-let resizeTimer;
+let resizeTimer = null;
 
 
 window.addEventListener(
@@ -271,15 +292,16 @@ window.addEventListener(
 
         clearTimeout(resizeTimer);
 
-        resizeTimer = setTimeout(() => {
+        resizeTimer =
+            setTimeout(() => {
 
-            if (
-                window.innerWidth > 700
-            ) {
-                closeNavigation();
-            }
+                if (
+                    window.innerWidth > 700
+                ) {
+                    closeNavigation();
+                }
 
-        }, 150);
+            }, 150);
 
     },
     {
@@ -289,7 +311,7 @@ window.addEventListener(
 
 
 /* =========================================================
-   HANDLE HASH LINKS
+   HANDLE HASH LINKS ON INITIAL LOAD
 ========================================================= */
 
 window.addEventListener(
@@ -303,27 +325,33 @@ window.addEventListener(
             return;
         }
 
+
         const target =
             document.getElementById(
                 hash.substring(1)
             );
 
+
         if (!target) {
             return;
         }
 
+
         setTimeout(() => {
+
+            const reducedMotion =
+                window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches;
+
 
             target.scrollIntoView({
                 behavior:
-                    window.matchMedia(
-                        "(prefers-reduced-motion: reduce)"
-                    ).matches
+                    reducedMotion
                         ? "auto"
                         : "smooth"
             });
 
         }, 100);
-
     }
 );
