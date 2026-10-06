@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -20,7 +20,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="#home" class="logo">MK<span>.</span></a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -34,28 +34,32 @@
   <!-- HERO -->
   <header id="home" class="hero">
     <div class="hero-inner">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        Available for backend roles
+      </div>
       <p class="hero-eyebrow">Hi, I'm</p>
       <h1>Md Kamruzzaman</h1>
       <h2 class="hero-sub">Python Backend Developer</h2>
       <p class="hero-text">
-        Computer Science graduate specializing in Machine Learning, currently focused on
+        Computer Science graduate specializing in Machine Learning, now focused on
         backend engineering. I build production-oriented REST APIs with FastAPI,
-        PostgreSQL, and Docker — and deploy them to the cloud.
+        PostgreSQL, and Docker — tested, containerized, and deployed to the cloud.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-primary" href="#projects">View Projects →</a>
         <a class="btn btn-ghost" href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="hero-meta">
-        <span>✉️ <a href="mailto:kamruzzamanmoon13@gmail.com">kamruzzamanmoon13@gmail.com</a></span>
-        <span>🔗 <a href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/" target="_blank" rel="noopener">LinkedIn</a></span>
-        <span>💻 <a href="https://github.com/moon121314" target="_blank" rel="noopener">GitHub</a></span>
+        <a href="mailto:kamruzzamanmoon13@gmail.com">✉️ kamruzzamanmoon13@gmail.com</a>
+        <a href="https://www.linkedin.com/in/kamruzzaman-moon-5a83281b7/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a href="https://github.com/moon121314" target="_blank" rel="noopener">💻 GitHub</a>
       </div>
     </div>
   </header>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <h2 class="section-title">About Me</h2>
     <div class="prose">
       <p>
@@ -78,7 +82,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
+  <section id="skills" class="section reveal">
     <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
 
@@ -145,18 +149,63 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
+  <section id="projects" class="section reveal">
     <h2 class="section-title">Projects</h2>
 
     <h3 class="subsection-title">Featured</h3>
     <div class="projects-grid">
 
+      <!-- ===== ML EXPENSE PLATFORM ===== -->
       <article class="project-card">
-        <div class="project-thumb">
-          <img src="assets/expense-tracker.png" alt="Expense Tracker API — Swagger docs" />
+        <div class="project-thumb project-thumb--ml">
+          <span class="thumb-label">ML</span>
+          <span class="thumb-tag">Machine Learning · FastAPI</span>
         </div>
         <div class="project-body">
-          <h4>Expense Tracker API</h4>
+          <div class="project-head">
+            <h4>ML Expense Platform</h4>
+            <span class="badge">Featured</span>
+          </div>
+          <p class="project-desc">
+            An ML-driven extension of the Expense Tracker: a FastAPI backend that
+            combines authenticated expense management with a machine learning layer
+            for automatic category prediction and spending insights — a first step
+            toward production MLOps.
+          </p>
+          <ul class="project-features">
+            <li>JWT auth with user-scoped data isolation</li>
+            <li>Full CRUD for expenses and categories</li>
+            <li>ML model for automatic expense categorization</li>
+            <li>Spending insights and summary endpoints</li>
+            <li>PostgreSQL + SQLAlchemy + Alembic migrations</li>
+            <li>Model served through the API layer</li>
+            <li>Dockerized with CI via GitHub Actions</li>
+            <li>Deployed to Render</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+            <span>SQLAlchemy</span><span>Alembic</span><span>JWT</span>
+            <span>scikit-learn</span><span>pandas</span><span>Docker</span>
+            <span>pytest</span><span>GitHub Actions</span><span>Render</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/moon121314/ml-expense-platform" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://ml-expense-platform.onrender.com/docs" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
+          <p class="project-meta">Backend + ML / REST API · Advanced · Deployed</p>
+        </div>
+      </article>
+
+      <!-- ===== EXPENSE TRACKER API ===== -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--api">
+          <span class="thumb-label">API</span>
+          <span class="thumb-tag">REST · JWT · PostgreSQL</span>
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h4>Expense Tracker API</h4>
+          </div>
           <p class="project-desc">
             Production-oriented REST API for tracking personal expenses, built with
             FastAPI, PostgreSQL, and JWT authentication. Containerized, tested with
@@ -180,7 +229,6 @@
             <span>Render</span>
           </div>
           <div class="project-links">
-            <!-- ⚠️ VERIFY THIS URL — see note below -->
             <a href="https://github.com/moon121314/expense-tracker" target="_blank" rel="noopener">Code ↗</a>
             <a href="https://expense-tracker-adds.onrender.com/docs" target="_blank" rel="noopener">Live Demo ↗</a>
           </div>
@@ -195,7 +243,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education" class="section">
+  <section id="education" class="section reveal">
     <h2 class="section-title">Education</h2>
     <div class="timeline">
       <div class="timeline-item">
@@ -223,7 +271,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+  <section id="contact" class="section reveal">
     <h2 class="section-title">Contact</h2>
     <p class="prose">Open to Python / backend opportunities and collaborations. Best way to reach me is email or LinkedIn.</p>
     <div class="contact-grid">
