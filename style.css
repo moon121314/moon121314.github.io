@@ -229,6 +229,18 @@ ul {
     gap: 70px;
 }
 
+/* PROFILE PICTURE */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(124, 140, 255, 0.2);
+    display: block;
+}
+
 .eyebrow {
     display: inline-flex;
     padding: 7px 12px;
@@ -887,6 +899,11 @@ a:focus-visible, button:focus-visible {
     }
     .hero-description {
         font-size: 0.96rem;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
     }
     .terminal-body {
         padding: 22px;
