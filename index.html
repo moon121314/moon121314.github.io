@@ -10,7 +10,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Md Kamruzzaman | AI & Backend Developer">
-    <meta property="og:description" content="Python Backend Developer building production-style APIs and GenAI systems.">
+    <meta property="og:description" content="Python Backend Developer building production-style APIs, GenAI systems, and MLOps infrastructure.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://moon121314.github.io/">
 
@@ -46,7 +46,7 @@
                     <p class="eyebrow">AI & Python Backend Developer</p>
                     <h1>Building reliable <span>AI & backend systems</span> for the future.</h1>
                     <p class="hero-description">
-                        I'm Md Kamruzzaman, a Computer Science graduate focused on Python backend development and Generative AI (RAG pipelines), gradually expanding into production-grade MLOps.
+                        I'm Md Kamruzzaman, a Computer Science graduate focused on Python backend development, Generative AI (RAG pipelines), and expanding into production-grade MLOps.
                     </p>
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -86,7 +86,7 @@
             <div class="container">
                 <div class="section-heading reveal">
                     <p class="section-label">ABOUT</p>
-                    <h2>Backend first. GenAI next.</h2>
+                    <h2>Backend first. MLOps next.</h2>
                 </div>
                 <div class="about-grid">
                     <div class="about-text reveal">
@@ -108,8 +108,8 @@
                             <span>Primary backend<br>framework</span>
                         </div>
                         <div class="stat-card">
-                            <strong>GenAI</strong>
-                            <span>Current advanced<br>learning direction</span>
+                            <strong>MLOps</strong>
+                            <span>Target career<br>specialization</span>
                         </div>
                     </div>
                 </div>
@@ -125,22 +125,9 @@
                     <p>Technologies I'm using and actively developing.</p>
                 </div>
                 <div class="skills-grid">
-                    <!-- GENAI -->
-                    <article class="skill-card reveal">
-                        <div class="skill-number">01</div>
-                        <h3>Generative AI</h3>
-                        <div class="tags">
-                            <span>LangChain</span>
-                            <span>RAG Pipelines</span>
-                            <span>ChromaDB</span>
-                            <span>Google Gemini</span>
-                            <span>Prompt Engineering</span>
-                        </div>
-                    </article>
-
                     <!-- BACKEND -->
                     <article class="skill-card reveal">
-                        <div class="skill-number">02</div>
+                        <div class="skill-number">01</div>
                         <h3>Backend</h3>
                         <div class="tags">
                             <span>Python</span>
@@ -151,9 +138,35 @@
                         </div>
                     </article>
 
-                    <!-- DATABASE -->
+                    <!-- GENAI -->
+                    <article class="skill-card reveal">
+                        <div class="skill-number">02</div>
+                        <h3>Generative AI</h3>
+                        <div class="tags">
+                            <span>LangChain</span>
+                            <span>RAG Pipelines</span>
+                            <span>ChromaDB</span>
+                            <span>Google Gemini</span>
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </article>
+
+                    <!-- ML / MLOPS -->
                     <article class="skill-card reveal">
                         <div class="skill-number">03</div>
+                        <h3>ML / MLOps</h3>
+                        <div class="tags">
+                            <span>scikit-learn</span>
+                            <span>MLflow</span>
+                            <span>Evidently</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                        </div>
+                    </article>
+
+                    <!-- DATABASE -->
+                    <article class="skill-card reveal">
+                        <div class="skill-number">04</div>
                         <h3>Database</h3>
                         <div class="tags">
                             <span>PostgreSQL</span>
@@ -165,26 +178,13 @@
 
                     <!-- DEVOPS -->
                     <article class="skill-card reveal">
-                        <div class="skill-number">04</div>
+                        <div class="skill-number">05</div>
                         <h3>DevOps</h3>
                         <div class="tags">
                             <span>Docker</span>
                             <span>GitHub Actions</span>
                             <span>CI/CD</span>
                             <span>Render</span>
-                        </div>
-                    </article>
-
-                    <!-- ML / MLOPS -->
-                    <article class="skill-card reveal">
-                        <div class="skill-number">05</div>
-                        <h3>ML / MLOps</h3>
-                        <div class="tags">
-                            <span>scikit-learn</span>
-                            <span>MLflow</span>
-                            <span>Evidently</span>
-                            <span>Prometheus</span>
-                            <span>Grafana</span>
                         </div>
                     </article>
 
@@ -212,41 +212,45 @@
                     <p>Practical systems built to demonstrate backend engineering and production AI concepts.</p>
                 </div>
                 <div class="projects-grid">
-                    <!-- PROJECT 1: RAG API -->
+                    <!-- PROJECT 1: Expense Tracker (Backend Foundation) -->
                     <article class="project-card featured reveal">
                         <div class="project-top">
                             <div>
-                                <p class="project-type">Generative AI / RAG</p>
-                                <h3>Docu-RAG API</h3>
+                                <p class="project-type">Python Backend / REST API</p>
+                                <h3>Expense Tracker API</h3>
                             </div>
-                            <span class="project-status">Active</span>
+                            <span class="project-status">Deployed</span>
                         </div>
                         <p class="project-description">
-                            A production-ready Retrieval-Augmented Generation (RAG) API built with FastAPI and LangChain. It allows users to ask questions based on custom PDF documents, preventing AI hallucinations.
+                            A secure REST API built with FastAPI and PostgreSQL, designed around authentication, user isolation, database migrations, testing and CI/CD. Serves as the backend foundation for my MLOps projects.
                         </p>
                         <ul class="project-features">
-                            <li>LangChain LCEL pipeline</li>
-                            <li>Vector embeddings with ChromaDB</li>
-                            <li>Google Gemini LLM integration</li>
-                            <li>Semantic search retrieval</li>
-                            <li>FastAPI backend</li>
+                            <li>JWT authentication</li>
+                            <li>PostgreSQL + SQLAlchemy</li>
+                            <li>Alembic database migrations</li>
+                            <li>User-isolated expense management</li>
+                            <li>pytest with 91% coverage</li>
+                            <li>GitHub Actions CI/CD</li>
                         </ul>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>FastAPI</span>
-                            <span>LangChain</span>
-                            <span>ChromaDB</span>
-                            <span>Gemini API</span>
-                            <span>RAG</span>
+                            <span>PostgreSQL</span>
+                            <span>SQLAlchemy</span>
+                            <span>Docker</span>
+                            <span>pytest</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/moon121314/docu-rag-api" target="_blank" rel="noopener noreferrer" class="project-link primary-link">
+                            <a href="https://github.com/moon121314/expense-tracker" target="_blank" rel="noopener noreferrer" class="project-link primary-link">
                                 View GitHub <span>↗</span>
+                            </a>
+                            <a href="https://expense-tracker-adds.onrender.com/docs" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Live API <span>↗</span>
                             </a>
                         </div>
                     </article>
 
-                    <!-- PROJECT 2: ML Platform -->
+                    <!-- PROJECT 2: ML Platform (MLOps) -->
                     <article class="project-card reveal">
                         <div class="project-top">
                             <div>
@@ -284,40 +288,36 @@
                         </div>
                     </article>
 
-                    <!-- PROJECT 3: Expense Tracker -->
+                    <!-- PROJECT 3: RAG API (GenAI) -->
                     <article class="project-card reveal">
                         <div class="project-top">
                             <div>
-                                <p class="project-type">Python Backend / REST API</p>
-                                <h3>Expense Tracker API</h3>
+                                <p class="project-type">Generative AI / RAG</p>
+                                <h3>Docu-RAG API</h3>
                             </div>
-                            <span class="project-status">Deployed</span>
+                            <span class="project-status">Active</span>
                         </div>
                         <p class="project-description">
-                            A secure REST API built with FastAPI and PostgreSQL, designed around authentication, user isolation, database migrations, testing and CI/CD.
+                            A production-ready Retrieval-Augmented Generation (RAG) API built with FastAPI and LangChain. It allows users to ask questions based on custom PDF documents, preventing AI hallucinations.
                         </p>
                         <ul class="project-features">
-                            <li>JWT authentication</li>
-                            <li>PostgreSQL + SQLAlchemy</li>
-                            <li>Alembic database migrations</li>
-                            <li>User-isolated expense management</li>
-                            <li>pytest with 91% coverage</li>
-                            <li>GitHub Actions CI/CD</li>
+                            <li>LangChain LCEL pipeline</li>
+                            <li>Vector embeddings with ChromaDB</li>
+                            <li>Google Gemini LLM integration</li>
+                            <li>Semantic search retrieval</li>
+                            <li>FastAPI backend</li>
                         </ul>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>FastAPI</span>
-                            <span>PostgreSQL</span>
-                            <span>SQLAlchemy</span>
-                            <span>Docker</span>
-                            <span>pytest</span>
+                            <span>LangChain</span>
+                            <span>ChromaDB</span>
+                            <span>Gemini API</span>
+                            <span>RAG</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/moon121314/expense-tracker" target="_blank" rel="noopener noreferrer" class="project-link primary-link">
+                            <a href="https://github.com/moon121314/docu-rag-api" target="_blank" rel="noopener noreferrer" class="project-link primary-link">
                                 View GitHub <span>↗</span>
-                            </a>
-                            <a href="https://expense-tracker-adds.onrender.com/docs" target="_blank" rel="noopener noreferrer" class="project-link">
-                                Live API <span>↗</span>
                             </a>
                         </div>
                     </article>
